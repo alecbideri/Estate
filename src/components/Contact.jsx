@@ -2,7 +2,6 @@ import React from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const web3_API_KEY = import.meta.env.WEB3_API_KEY;
 
 const Contact = () =>{
 
@@ -13,7 +12,7 @@ const Contact = () =>{
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", web3_API_KEY );
+        formData.append("access_key", '50135f3c-df4f-4bde-9816-6337b37f524a' );
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
